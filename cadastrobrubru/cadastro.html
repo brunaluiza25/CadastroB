@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clube de Vôlei - Cadastro</title>
+</head>
+
+<body page="cadastro" onload="initializePage()">
+    <header id="header">
+        <div class="header-left">
+            <img src="img/banner.png" class="logo" alt="Logo do Clube de Vôlei" />
+        </div>
+        <div class="header-right">
+            <ul class="links">
+                <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Início</a></li>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="content">
+        <div id="cadastro-registro">
+            <section>
+                <form id="forms-cadastro">
+                    <h2>Cadastro</h2>
+                    <div class="itens">
+                        <label for="tnome">Nome:</label>
+                        <input id="tnome" name="tnome" type="text" size="30" name="txtnome" placeholder="Digite seu nome de usuário" /><br>
+
+                        <label for="temail">Email:</label>
+                        <input type="text" id="temail" name="temail" size="30" name="txtemail" required placeholder="Digite seu email" /><br>
+
+                        <label for="tsenha1">Senha:</label>
+                        <input type="password" id="tsenha1" name="tsenha1" size="30" required placeholder="Digite sua senha" /><br>
+
+                        <label for="tsenha2">Confirmar Senha:</label>
+                        <input type="password" id="tsenha2" name="tsenha2" size="30" required placeholder="Confirme sua senha" /><br>
+                    </div>
+                    <div class="itens button-container">
+                        <button type="button" onclick="visualizar('login')" name="btncadastra">Cadastrar</button>
+                    </div>
+                    <div class="itens button-container">
+                        <p>Já é cadastrado? <a onclick="visualizar('login')">Logue-se</a></p>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <div id="login">
+            <section>
+                <form id="loginForm">
+                    <h2>Login</h2>
+                    <label for="email">E-mail:</label>
+                    <input type="text" size="30" id="emailLogin" name="txtemail" placeholder="Digite seu email" required><br>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" size="30" id="senhaLogin" placeholder="Digite sua senha" required><br>
+
+                    <div class="btn">
+                        <button type="button" name="btncadastra" onclick="fazerLogin()">Entrar</button>
+                    </div>
+
+                    <div class="itens">
+                        <p>Novo por aqui? <a onclick="visualizar('cadastro')">Cadastre-se</a></p>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <div id="lista-registro">
+            <div class="itens">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Senha</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaRegistroBody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn button-container">
+                <button type="button" onclick="visualizar('cadastro', true)">Novo Cadastro</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">Bruna Luiza | Turma A <br> 
+            <a href="https://www.instagram.com/brunalu_z/" target="_blank">
+                <i class="bi bi-instagram text-danger bi-30x"></i>
+            </a>
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

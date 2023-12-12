@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #8A2BE2, #FFA500);
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #fd7f37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-left img {
+    max-width: 80%;
+    height: auto;
+}
+
+.header-right {
+    margin-right: 20px;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    margin-right: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+    background-color: #330063;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#cadastro-registro,
+#login,
+#lista-registro {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form h2 {
+    color: #fd7f37;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #fd7f37;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #ff9933;
+}
+
+form p {
+    margin-top: 15px;
+    color: #333;
+}
+
+
+.section-title {
+    color: #cc5e32;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-modern img {
+    border: 2px solid #9B5235; /* Adiciona uma borda sólida ao redor da imagem */
+    border-radius: 0; /* Remove o efeito de borda redonda */
+}
+
+.team-modern-caption {
+    padding: 15px; /* Adiciona um preenchimento aos cartões para parecerem mais como cartões de álbuns */
+    background-color: #9B5235; /* Cor de fundo dos cartões */
+    text-align: center;
+}
+
+.team-modern-name,
+.team-modern-status {
+    color: white;
+}
+
+.player-photo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    margin: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.portfolio-info {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.portfolio-info h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.portfolio-info p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+
+.portfolio .portfolio-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.portfolio .portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Adicione este estilo para centralizar o conteúdo da seção "Sobre Nós" */
+.sobre-nos-content {
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+.sobre-nos-content p {
+    font-size: 16px;
+    color: #555;
+}
+
+.sobre-nos-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+footer {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #330063;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.footer-text a {
+    color: #fd7f37;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
